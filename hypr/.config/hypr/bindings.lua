@@ -10,6 +10,8 @@ hl.unbind("SUPER + SHIFT + P") -- default is google photos
 hl.unbind("SUPER + SHIFT + C") -- default is app hey calendar
 hl.unbind("SUPER + SHIFT + E") -- default is app hey email
 hl.unbind("SUPER + SHIFT + S") -- default is google maps
+hl.unbind("SUPER + SHIFT + W") -- default is Omawrite
+hl.unbind("SUPER + SHIFT + F") -- default is Nautilus File Manager
 
 -- Basic navigation
 o.bind("SUPER + SHIFT + Q", "Close window", hl.dsp.window.close())
@@ -27,12 +29,21 @@ o.bind("SUPER + H", "Move focus Left", hl.dsp.focus({direction ="left"}))
 -- Open Apps
 o.bind("SUPER + SHIFT + Return", "Terminal", hl.dsp.exec_cmd("kitty"))
 o.bind("SUPER + SHIFT + P", "Kee", hl.dsp.exec_cmd("keepassxc")) 
+o.bind("SUPER + SHIFT + S", "Slack", hl.dsp.exec_cmd("slack")) 
+o.bind("SUPER + SHIFT + F", "Yazi File Manager", hl.dsp.exec_cmd("kitty -e yazi"))
+o.bind("SUPER + SHIFT + W", "Whatsapp", hl.dsp.exec_cmd("com.rtosta.zapzap")) 
 o.bind("SUPER + SHIFT + C", "Calendar", { webapp = "https://calendar.google.com/calendar/u/0/r" })
 o.bind("SUPER + SHIFT + E", "Email", { webapp = "https://mail.google.com/mail/u/1/#inbox" })
 
 
+-- Utilities
+---- Toggle Layout
 o.bind("SUPER + ALT + L", "Toggle workspace layout", "omarchy-hyprland-workspace-layout-toggle")
-
+---- Lid behavior
+o.bind("switch:on:Lid Switch", nil, "omarchy-system-lid-close", { locked = true })
+hl.unbind("switch:on:Lid Switch")
+o.bind("switch:off:Lid Switch", nil, "omarchy-hyprland-monitor-clamshell", { locked = true })
+hl.unbind("switch:off:Lid Switch")
 --
 -- To disable every Omarchy default binding, set this in
 -- ~/.config/hypr/hyprland.lua before require("default.hypr.omarchy"), then add

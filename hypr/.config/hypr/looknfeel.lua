@@ -62,3 +62,13 @@ hl.window_rule({
     match = {class = "chromium"},
     workspace="2"
 })
+
+---- Make Slack and Whatsapp open on Workspace 3
+hl.window_rule({
+    match = { class = "slack"},
+    workspace="3 silent"
+})
+hl.window_rule({
+    match = { class = "com.rtosta.zapzap"},
+    workspace="3 silent"
+})
