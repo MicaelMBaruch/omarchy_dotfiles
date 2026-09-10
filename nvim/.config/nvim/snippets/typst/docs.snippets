@@ -1,0 +1,23 @@
+snippet init "imports the comum document template" w
+  #import "/dotfiles/typst/doc.typ": cdoc
+  #show: doc => cdoc("${1:Título}", "Micael Baruch (15578823)", datetime.today(), ${2:número de colunas},  doc)
+
+snippet enuma "lista alfabética" w
+  #set enum(numbering: "a)")
+  + $1
+
+snippet enum "lista numérica (caso eu tenha sobrescrito com outra)" w
+  #set enum(numbering: "1)")
+  + $1
+
+snippet fig "importa uma figura"
+  #figure(
+    image("figs/${1:figura.png}", width: 30%),
+    caption: [${2:Legenda}],
+  ) <${3:Ref_interna}>
+  $0
+
+snippet tab "cria uma tabela básica"
+    #table($1
+    )
+    $0

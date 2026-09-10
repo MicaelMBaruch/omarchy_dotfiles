@@ -1,0 +1,53 @@
+% Author: Micael Baruch adaptado do original de Luan Leal
+% Last update: 2025-6-12
+
+% ----------------------------
+
+% ----------------------------   IMPORTS   ----------------------------
+\usepackage{amssymb, amsthm, amsmath, geometry, siunitx, caption, float, graphicx, bm, booktabs}
+\usepackage[version=4]{mhchem}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage[onehalfspacing]{setspaceenhanced}
+\usepackage[brazil]{babel} % Adaptação ao pt-br
+\usepackage{hyperref} % Usado para inserir links
+\usepackage[capitalize, brazilian, noabbrev]{cleveref} % Referência adaptada ao pt-br
+\usepackage{subcaption}
+\usepackage{makecell}
+\usepackage[num,overcite]{abntex2cite}
+
+% ----------------------------   LAYOUT   ----------------------------
+\citebrackets[]
+\geometry{a4paper, lmargin=3cm, tmargin=3cm, rmargin=2cm, bmargin=2cm}
+\onehalfspacing
+%\setlength{\parindent}{45pt}
+\sisetup{output-decimal-marker = {,}}
+
+%--------------------------- Custom commands -----------------------------
+\newcommand{\commentspace}{\par\textbf{Espaço para comentários:}\vspace{5\baselineskip}}
+
+\newcommand{\abf}[1]{\mathversion{bold}\textbf{#1}\mathversion{normal}}
+
+%--------------------------- Custom environments -------------------------
+\newenvironment{comentario}{%
+    \vspace{\baselineskip}
+    \par\setlength\leftskip{1cm}\setlength\rightskip{1cm}%
+    \begin{itshape}%
+    }{%
+    \end{itshape}%
+    \par\setlength\leftskip{0cm}\setlength\rightskip{0cm}%
+    \vspace{\baselineskip}
+}
+
+\newenvironment{enunciado}{
+}{%
+}
+
+\newenvironment{resolution}{
+    \par
+    \vspace{0.5\baselineskip}
+    \textbf{Resolução:}
+    \par
+}{
+    \qed
+}
