@@ -72,3 +72,7 @@ hl.window_rule({
     match = { class = "com.rtosta.zapzap"},
     workspace="3 silent"
 })
+hl.window_rule({
+    match = {title = "Omarchy"},
+    workspace="special.scratchpad"
+})
