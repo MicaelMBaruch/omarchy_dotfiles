@@ -76,3 +76,7 @@ hl.window_rule({
     match = {title = "Omarchy"},
     workspace="special.scratchpad"
 })
+hl.window_rule({
+    match = {title = "music.youtube.com_/"},
+    workspace="special.scratchpad"
+})
