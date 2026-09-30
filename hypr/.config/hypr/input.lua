@@ -7,7 +7,7 @@ hl.config({
 input = {
   -- Use multiple keyboard layouts and switch between them with Left Alt + Right Alt.
   kb_layout = "br, us",
-  kb_options = "caps:escape,compose:ins,shift:both_capslock_cancel,grp:alts_toggle", -- caps is esc; compose with insert key; both shift = caps lock; both alt change keyboard layout
+  kb_options = "caps:escape,compose:ins,shift:both_capslock_cancel,grp:alts_toggle,lv3:ralt_switch", -- caps is esc; compose with insert key; both shift = caps lock; both alt change keyboard layout
 
   -- Use a specific keyboard variant if needed (e.g. intl for international keyboards).
   kb_variant = "thinkpad",

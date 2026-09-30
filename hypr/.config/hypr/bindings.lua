@@ -10,7 +10,6 @@ hl.unbind("SUPER + SHIFT + P") -- default is google photos
 hl.unbind("SUPER + SHIFT + C") -- default is app hey calendar
 hl.unbind("SUPER + SHIFT + E") -- default is app hey email
 hl.unbind("SUPER + SHIFT + S") -- default is google maps
-hl.unbind("SUPER + SHIFT + W") -- default is Omawrite
 hl.unbind("SUPER + SHIFT + F") -- default is Nautilus File Manager
 hl.unbind("SUPER + SHIFT + M") -- default is Spotify
 
@@ -32,7 +31,7 @@ o.bind("SUPER + SHIFT + Return", "Terminal", hl.dsp.exec_cmd("kitty"))
 o.bind("SUPER + SHIFT + P", "Kee", hl.dsp.exec_cmd("keepassxc")) 
 o.bind("SUPER + SHIFT + S", "Slack", hl.dsp.exec_cmd("slack")) 
 o.bind("SUPER + SHIFT + F", "Yazi File Manager", hl.dsp.exec_cmd("kitty -e yazi"))
-o.bind("SUPER + SHIFT + W", "Whatsapp", hl.dsp.exec_cmd("com.rtosta.zapzap")) 
+o.bind("SUPER + SHIFT + Z", "Whatsapp", hl.dsp.exec_cmd("com.rtosta.zapzap")) 
 o.bind("SUPER + SHIFT + C", "Calendar", { webapp = "https://calendar.google.com/calendar/u/0/r" })
 o.bind("SUPER + SHIFT + E", "Email", { webapp = "https://mail.google.com/mail/u/1/#inbox" })
 o.bind("SUPER + SHIFT + M", "Email", { webapp = "https://music.youtube.com/" })
