@@ -16,7 +16,7 @@ source "$OMARCHY_PATH/default/bash/rc"
 #
 
 sanchezProtocol() {
-    ~/repos/protocol_sanchez/sanchez_env/bin/python ~/repos/protocol_sanchez/main.py
+    ~/repos/sanchez_protocol/sanchez_env/bin/python ~/repos/sanchez_protocol/main.py
 }
 
 alias safe='sanchezProtocol'
