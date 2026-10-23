@@ -20,3 +20,10 @@ sanchezProtocol() {
 }
 
 alias safe='sanchezProtocol'
+
+githubSSH() {
+    eval $(ssh-agent)
+    ssh-add ~/.ssh/ghub
+}
+
+alias gss='githubSSH'
