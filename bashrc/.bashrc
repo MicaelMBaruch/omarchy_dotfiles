@@ -13,4 +13,10 @@ source "$OMARCHY_PATH/default/bash/rc"
 # Make an alias for invoking commands you use constantly
 # alias p='python'
 #
+#
 
+sanchezProtocol() {
+    ~/repos/protocol_sanchez/sanchez_env/bin/python ~/repos/protocol_sanchez/main.py
+}
+
+alias safe='sanchezProtocol'
